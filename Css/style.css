@@ -22,6 +22,7 @@
     0% {
         bottom: 0;
     }
+
     40% {
         bottom: 160;
     }
@@ -43,6 +44,8 @@
 
 
 .game-board {
+    left: 10%;
+    margin-top: 8%;
     width: 80%;
     height: 500px;
     border: 2px solid black;
@@ -62,5 +65,9 @@
     width: 150px;
     position: absolute;
     bottom: 0;
-    animation: mario-jump 500ms infinite;
+}
+
+.jump {
+    animation: mario-jump 500ms ease-out;
+
 }
