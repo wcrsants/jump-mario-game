@@ -24,15 +24,15 @@
     }
 
     40% {
-        bottom: 170;
+        bottom: 175;
     }
 
     50% {
-        bottom: 180px;
+        bottom: 185px;
     }
 
     60% {
-        bottom: 170px;
+        bottom: 175px;
     }
 
     100% {
@@ -81,7 +81,7 @@
 }
 
 .jump {
-    animation: mario-jump 500ms ease-out;
+    animation: mario-jump 550ms ease-out;
 
 }
 
