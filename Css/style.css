@@ -24,31 +24,44 @@
     }
 
     40% {
-        bottom: 160;
+        bottom: 170;
     }
 
     50% {
-        bottom: 170px;
+        bottom: 180px;
     }
 
     60% {
-        bottom: 160px;
+        bottom: 170px;
     }
 
     100% {
         bottom: 0;
     }
+
 }
+
+    @keyframes cloudsMove { /*Movimento das nuvens*/
+        from {
+            right: -400px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
 
 /* DEFINIÇÕES DAS CLASSES */
 
 
 .game-board {
-    left: 10%;
-    margin-top: 8%;
+    margin-top: 5%;
     width: 80%;
-    height: 500px;
-    border: 2px solid black;
+    left: 10%;
+    height: 450px;
+    border-bottom: 15px solid green;
+    background: linear-gradient(#87ceeb, white);
     position: relative;
     overflow: hidden;
 }
@@ -57,7 +70,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 1.4s infinite linear;
 
 }
 
@@ -70,4 +83,10 @@
 .jump {
     animation: mario-jump 500ms ease-out;
 
+}
+
+.clouds {
+    position: absolute;
+    width: 400px;
+    animation: cloudsMove 5s infinite linear; 
 }
